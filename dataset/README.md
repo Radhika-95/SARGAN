@@ -1,5 +1,28 @@
-# Dataset
+# Cats vs. Dogs Dataset
 
-Download the Cats vs Dogs dataset separately. The notebook expects data in `data/dogs-vs-cats-classification/` when launched from the repository root. Keep the label names or naming convention compatible with the notebook. The raw dataset is excluded from Git for size and licensing reasons.
+This project uses the Cats vs. Dogs image dataset for binary image classification and super-resolution.
 
-The completed run reported 13,288 images and saved split lists in `SRGAN_Midterm/train_split.csv`, `val_split.csv`, and `test_split.csv`. Those CSVs may contain machine-specific absolute file paths. Do not publish sensitive local paths. Regenerate or normalize the split files before sharing, and preserve identical test identities for Model A and Model B.
+## Dataset Preparation
+
+Images are organized into two classes:
+
+- Cat: Label 0
+- Dog: Label 1
+
+The final experiment used 13,288 images, divided into:
+
+| Partition | Images |
+|---|---:|
+| Training | 8,370 |
+| Validation | 931 |
+| Testing | 3,987 |
+
+The dataset is used in two preprocessing pipelines:
+
+- Classifier A: Original images resized to 128 × 128.
+- SRGAN: Images downscaled to 32 × 32 and reconstructed to 128 × 128.
+- Classifier B: SRGAN-generated 128 × 128 images.
+
+Download the original Cats vs. Dogs dataset from the dataset provider and update the dataset path in the notebook before running it.
+
+The full image dataset is not included in the GitHub repository because of its size.
