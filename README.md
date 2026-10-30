@@ -17,6 +17,9 @@ Single-image super-resolution reconstructs a high-resolution image from a low-re
 
 ## 2. Project Structure
 
+The project is organized as follows:
+
+```text
 SARGAN/
 │
 ├── README.md
@@ -46,6 +49,19 @@ SARGAN/
 │
 └── dataset/
     └── README.md
+```
+
+### Directory Description
+
+- **`notebooks/`** — Complete Jupyter Notebook containing Classifier A, SRGAN training, and Classifier B.
+- **`models/`** — Model descriptions and links to trained PyTorch checkpoints.
+- **`images/`** — Image transformations, SRGAN-generated images, training curves, and evaluation figures.
+- **`results/`** — Classification performance metrics, PSNR, SSIM, and evaluation results.
+- **`dataset/`** — Dataset description and preparation instructions.
+- **`README.md`** — Project documentation and reproducibility instructions.
+- **`requirements.txt`** — Python dependencies.
+
+**Note:** The notebook generates checkpoints, figures, and results inside the `SRGAN_Midterm/` directory during execution. Selected figures and results are copied into the repository's corresponding folders.
 
 **The notebook itself produces** `SRGAN_Midterm/checkpoints/`, `SRGAN_Midterm/figures/`, and `SRGAN_Midterm/results/` **at runtime**. To publish the figures, copy selected files from `SRGAN_Midterm/figures/` into this repository's `images/`, and results from `SRGAN_Midterm/results/` into `results/`.
 
