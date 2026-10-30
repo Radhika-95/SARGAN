@@ -123,8 +123,4 @@ The implemented SRGAN improves image reconstruction fidelity over bicubic interp
 
 **Reproducibility notes:** The repository does not redistribute the full image dataset. The experiment's saved train/test CSV files may contain absolute paths specific to the original training machine; adapt or regenerate them consistently before rerunning the notebook. Large weights and full resume checkpoints should be linked in `models/README.md` if not uploaded to GitHub.
 
-## 7. References
 
-1. Ledig et al., *Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network*, CVPR 2017. https://arxiv.org/abs/1609.04802
-2. He et al., *Deep Residual Learning for Image Recognition*, CVPR 2016. https://arxiv.org/abs/1512.03385
-3. [PyTorch documentation](https://docs.pytorch.org/)
