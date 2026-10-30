@@ -17,22 +17,35 @@ Single-image super-resolution reconstructs a high-resolution image from a low-re
 
 ## 2. Project Structure
 
-```text
-SRGAN-Cats-Dogs-Midterm/
+SARGAN/
+│
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+│
 ├── notebooks/
 │   └── Applied_AI_midterm.ipynb
+│
 ├── models/
-│   └── README.md                  # Checkpoint instructions and model naming
-├── images/                       # Exported figures from the training run
-├── results/                      # CSV/JSON metrics and reports
-├── docs/
-│   └── reproduction_notes.md
-└── data/
-    └── README.md                  # Dataset acquisition and placement; no dataset committed
-```
+│   └── README.md
+│
+├── images/
+│   ├── image_transformations.png
+│   ├── classifier_A_training.png
+│   ├── srgan_training_losses.png
+│   ├── srgan_generated_examples.png
+│   ├── classifier_B_training.png
+│   ├── model_comparison.png
+│   ├── confusion_matrices.png
+│   └── roc_comparison.png
+│
+├── results/
+│   ├── classifier_comparison.csv
+│   ├── classifier_metrics.json
+│   └── srgan_quality_metrics.json
+│
+└── dataset/
+    └── README.md
 
 **The notebook itself produces** `SRGAN_Midterm/checkpoints/`, `SRGAN_Midterm/figures/`, and `SRGAN_Midterm/results/` **at runtime**. To publish the figures, copy selected files from `SRGAN_Midterm/figures/` into this repository's `images/`, and results from `SRGAN_Midterm/results/` into `results/`.
 
