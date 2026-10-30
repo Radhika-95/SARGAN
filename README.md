@@ -1,4 +1,3 @@
-# SARGAN
 # Super-Resolution Generative Adversarial Network (SRGAN) for Cats vs Dogs
 
 This project implements an **SRGAN (32 × 32 → 128 × 128)** and evaluates its effect on a binary Cats vs Dogs classification task. Two **PyTorch ResNet18** transfer-learning classifiers are compared: **Model A**, trained on original 128 × 128 images, and **Model B**, trained on SRGAN-generated 128 × 128 images.

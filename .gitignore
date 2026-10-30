@@ -1,0 +1,16 @@
+# Data and generated runtime outputs
+/data/*
+!/data/README.md
+/SRGAN_Midterm/
+# Large checkpoint files anywhere in repo
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.keras
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.DS_Store
