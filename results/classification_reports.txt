@@ -1,0 +1,19 @@
+CLASSIFIER A
+              precision    recall  f1-score   support
+
+         Cat       0.95      0.98      0.96      2093
+         Dog       0.98      0.94      0.96      1894
+
+    accuracy                           0.96      3987
+   macro avg       0.96      0.96      0.96      3987
+weighted avg       0.96      0.96      0.96      3987
+
+CLASSIFIER B
+              precision    recall  f1-score   support
+
+         Cat       0.93      0.94      0.93      2093
+         Dog       0.93      0.92      0.92      1894
+
+    accuracy                           0.93      3987
+   macro avg       0.93      0.93      0.93      3987
+weighted avg       0.93      0.93      0.93      3987
